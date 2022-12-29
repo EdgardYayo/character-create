@@ -1,0 +1,24 @@
+.cont{
+    border-radius: 10px;
+    border: none;
+    border-left: 8px white double;
+    border-right: 8px white double;
+    background: linear-gradient(black, black, gray)
+}
+
+.img {
+    padding: 3px;
+    background-color: white;
+}
+
+.name {
+    font-size: 20px;
+    text-shadow: 0 0 5px gray;
+    text-transform: capitalize;
+}
+
+.description {
+    font-style: italic;
+    text-transform: capitalize;
+    letter-spacing: 1pt;
+}

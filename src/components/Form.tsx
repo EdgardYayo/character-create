@@ -1,5 +1,6 @@
 import React, { useReducer } from "react"
-import {Sub} from '../types'
+import { Sub } from '../types'
+import sty from './Form.module.css';
 
 
 interface FormState {
@@ -70,13 +71,12 @@ const Form = ({onNewSub}: FormProps) => {
     return (
       <div>
         <form onSubmit={handleSubmit}>
-          <input onChange={handleChange} value={inputValues.nick} type={"text"} name="nick" placeholder="nick"/>     
-          <input onChange={handleChange} value={inputValues.subMonth} type={"number"} name="subMonth" placeholder="subMonth"/>     
-          <input onChange={handleChange} value={inputValues.avatar} type={"text"} name="avatar" placeholder="avatar"/>     
-          <textarea onChange={handleChange} value={inputValues.description} name="description" placeholder="description"/>
-          <button onClick={handleClear} type='button'>Clear the form</button>
-          <button type='submit'>Save New Character!</button>     
-
+          <input className={sty.inp} onChange={handleChange} value={inputValues.nick} type={"text"} name="nick" placeholder="nick"/>     
+          <input className={sty.inp} onChange={handleChange} value={inputValues.subMonth} type={"number"} name="subMonth" placeholder="subMonth"/>     
+          <input className={sty.inp} onChange={handleChange} value={inputValues.avatar} type={"text"} name="avatar" placeholder="avatar"/>     
+          <textarea className={sty.inp} onChange={handleChange} value={inputValues.description} name="description" placeholder="description"/>
+          <button className={sty.btn} onClick={handleClear} type='button'>Clear the form ⟳</button>
+          <button className={sty.btn} type='submit'>Save New Character! ✔️</button>     
         </form>
 
       </div>

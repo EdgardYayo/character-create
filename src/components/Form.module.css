@@ -1,0 +1,37 @@
+.inp {
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 8px 12px;
+    border-bottom: black 3px outset;
+    font-style: italic;
+    box-shadow: 0 0 7px white;
+}
+
+.inp::placeholder {
+    color: rgba(0, 0, 0, 0.558);
+    font-style: italic;
+}
+
+.btn {
+    margin-bottom: 5px;
+    letter-spacing: 3pt;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border-top: white 2px solid;
+    border-left: white 2px solid;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: white;
+    transform: scale(1.05);
+    color: black;
+    border: none;
+    border-bottom: black 3px solid;
+    border-right: black 3px solid;
+    box-shadow: 0 0 7px gray
+}
